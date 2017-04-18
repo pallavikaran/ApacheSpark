@@ -7,10 +7,10 @@ import org.slf4j.LoggerFactory;
 import java.io.File
 
 
-object GumGum {  
+object JoiningFiles {  
   def main(args: Array[String]) {
 
-    val conf = new SparkConf().setAppName("GumGum").setMaster("local")
+    val conf = new SparkConf().setAppName("JoiningFiles").setMaster("local")
     val sc = new SparkContext(conf)
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
     //Assets
